@@ -1,0 +1,62 @@
+
+/* ==============================
+   NAVEGACIÓN
+================================ */
+
+header {
+    background-color: #260707;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: auto;
+
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+
+    display: flex;
+
+    gap: 30px;
+}
+
+.menu a {
+    color: #eaebec;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #60a5fa;
+}
