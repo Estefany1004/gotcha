@@ -541,3 +541,102 @@ footer {
         gap: 16px;
     }
 }
+
+/* ==============================
+   ACTIVIDADES REALIZADAS (GALERÍA)
+================================ */
+
+.titulo-seccion {
+    font-size: 32px;
+    font-weight: bold;
+    color: #260707;
+    margin-bottom: 8px;
+}
+
+.titulo-seccion::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #821b1d;
+    margin-bottom: 15px;
+}
+
+.subitulo-seccion {
+    color: #64748b;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+/* Grilla de 2 columnas para las fotos */
+.actividades-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Tarjeta individual (figure) */
+.actividad {
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.actividad:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Imagen de la actividad */
+.actividad-imagen {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background-color: #f1f5f9;
+}
+
+.actividad-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.actividad:hover .actividad-imagen img {
+    transform: scale(1.05);
+}
+
+/* Texto descriptivo bajo la imagen */
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-content h3 {
+    color: #821b1d;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.card-content p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Adaptación a dispositivos móviles */
+@media (max-width: 768px) {
+    .actividades-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
