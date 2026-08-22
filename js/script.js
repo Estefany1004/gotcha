@@ -33,3 +33,11 @@ document.addEventListener('DOMContentLoaded', function(event){
         });
     });
 });
+
+// ==============================
+// AÑO ACTUAL
+// ==============================
+
+const anio = document.getElementById("anio");
+
+anio.textContent = new Date().getFullYear();
