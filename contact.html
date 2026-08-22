@@ -59,21 +59,73 @@
 
                  <div class="contact-data">
                     <strong> Whatsapp</strong>
-                    <p> 6281-6425</p>
+                    <a href="https://wa.me/50662816425?text=Hola%20si%20lees%20este%20mensaje%20todo%20salio%20bien" target="_blank"> :+506 6281 6425</a>
                 </div>
-
+                      <br>
                  <div class="contact-data">
                     <strong> Correo Electronico</strong>
-                    <p> exampple@gmail.com</p>
+                   <a href="mailto:justinbustos444@gmail.com"> :justinbustos444@gmail.com</a>
                 </div>
-
+                <br>
                  <div class="contact-data">
                     <strong> Ubicacion</strong>
                     <p> Costa Rica</p>
                 </div>
         </div>
+         <div class = "contenedor">
+            <h4 class = "formSection"> Complete el siguiente formulario para contactarnos</h4>
+          
 
+        <form id = "formContacto" action="#" method="post">
+            <div class ="form-group">
+                <label for "nombre"> Nombre Completo</label>
+                <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="obligatorio"
+                required
+                />
+            </div>
+            <br>
+            <div class = "form-group">
+                <label for ="email-address"> Correo Electronico</label>
+                <input
+                type = "email"
+                id = "email-address"
+                name = "email-address"
+                placeholder="obligatorio"
+                required
+                />
+            </div>
 
+            <br>
+             <div class = "form-group">
+                <label for ="asunto"> Asunto</label>
+                <input
+                type = "asunto"
+                id = "email-asunto"
+                name = "email-asunto"
+                placeholder="Asunto"
+                />
+            </div>
+            <br>
+             <div class = "form-group">
+                <label for = "mensaje"> Emergencia</label>
+                <textarea
+                id = "mensaje"
+                name = "mensaje"
+                rows = "7"
+                placeholder="Mencione la ayuda requerida"
+                required
+                ></textarea>
+            </div>
+            <br>
+
+            <button type = "submit" class="btn">Enviar mensaje</button>
+        </form>
+        </div>
+        </div>
     </main>
     
 </body>
