@@ -170,7 +170,7 @@ header {
 ================================ */
 
 .btn,
-.proyecto button {
+.service button {
     display: inline-block;
 
     background-color: #821b1d;
@@ -475,6 +475,171 @@ footer {
     align-items: center;
 }
 
+
+/* ===============================
+    SERVICES
+==================================*/
+
+
+.section-gray {
+    background-color: #f1f5f9;
+    padding: 90px 0;
+}
+
+.services{
+    min-height: 88vh;
+
+    background-image:
+        url("../img/banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+.services-overlay{
+    min-height: 88vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(64, 59, 59, 0.91),
+            rgba(33, 29, 30, 0.72)
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 40px;
+}
+
+.services-content {
+    max-width: 850px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.services h1{
+
+    font-size: 70px;
+
+    color:whitesmoke;
+
+    margin-bottom:10px;
+
+}
+
+.services p{
+
+    max-width: 700px;
+   
+    font-size: 18px;
+
+    color:whitesmoke;
+
+
+    margin-bottom: 10px;
+}
+
+.section-gray {
+    background-color: #f1f5f9;
+}
+
+.service-container{
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.service{
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+
+}
+
+.service:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.14);
+}
+
+.service-image{
+    height: 220px;
+
+    overflow: hidden;
+}
+
+.service-imagen img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s;
+}
+
+.service:hover .proyecto-imagen img {
+    transform: scale(1.06);
+}
+
+.service-content {
+    padding: 25px;
+}
+
+.service-category {
+    display: inline-block;
+
+    color: #2563eb;
+
+    background-color: #eff6ff;
+
+    border-radius: 20px;
+
+    padding: 5px 12px;
+
+    font-size: 12px;
+
+    margin-bottom: 12px;
+}
+
+.service h3 {
+    color: #0f172a;
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+.service p {
+    color: #64748b;
+
+    margin-bottom: 20px;
+}
+
 /* ==============================
    CONTACTO
 ================================ */
@@ -677,4 +842,3 @@ footer {
         gap: 16px;
     }
 }
-
