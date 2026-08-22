@@ -14,24 +14,123 @@
 <body>
 
     <header> 
-        <nav class = "navbar"> 
+       <nav class = "navbar"> 
 
             <div class = "logo"> 
-
+                GOTCHA!
             </div>
             
-            <div class = "menu">
+            <div>
+
+              <ul class = "menu">
 
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="about.html">Sobre nosotros</a></li>
                 <li><a href="services.html">Servicios</a></li>
                 <li><a href="contact.html">Contacto</a></li>
+
+              </ul>
               
 
             </div>
             
         </nav>
     </header>
+
+    <main>
+
+        <section class="services">
+
+            <div class="services-overlay">
+
+                 <div class="services-content">
+
+                    <h1>Servicios</h1>
+                    <p>Ofrecemos capacitaciones de preparación ante eventos naturales</p>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-gray">
+
+               <div class="container">
+
+                    <div class="service-container">
+
+                        <div class="service">
+
+                            <div class="service-image">
+                                <img src="img/donacion.jpg" alt="Servicio 1">
+                            </div>
+
+                            <div class="service-content">
+                                <span class="service-category">Ayuda humanitaria</span>
+                                <h3>Donaciones</h3>
+                                <p>Se realizan donaciones a refugios o personas necesitadas a partir de solicitudes.</p>
+
+                                 <a href="contact.html" class = "btn">Donación</a>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="service">
+
+                            <div class="service-image">
+                                <img src="img/capacitacion.jpg" alt="Service 2">
+                            </div>
+
+                            <div class="service-content">
+
+                                <span class="service-category">Capacitación</span>
+                                <h3>Capacitación ante desastres naturales</h3>
+                                <p>Realizamos capacitaciones y guías de como actuar ante un desastre natural.</p>
+
+                                <button onclick="alert('Redirigiendo a servico de capacitación')">Inscribirse</button>
+
+                            </div>
+                        </div>
+
+                        <div class="service">
+
+                            <div class="service-image">
+                                <img src="img/voluntariado.jpg" alt="Service 3">
+                            </div>
+
+                            <div class="service-content">
+
+                                <span class="service-category">Capacitación</span>
+                                <h3>Voluntariado</h3>
+                                <p>Se aceptan y capacitan personas para ser voluntarios durante emergencias naturales.</p>
+
+                                <button onclick="alert('Redirigiendo a servico de voluntariado')">Inscribirse</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </section>
+
+
+    </main>
+
+      <footer>
+        <div class="footer-container">
+            <p>
+                &copy; <span id = "anio"> </span>" GOTCHA. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Importando JS a proyecto -->
+    <script src="js/script.js"></script>
     
 </body>
 </html>
