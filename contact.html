@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 
@@ -7,7 +7,7 @@
     <title>Contact</title>
 
     <!-- Importando CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style .css">
 
 </head>
 
@@ -34,5 +34,105 @@
     </header>
     <main>
 
+        <div class = "contenedor">
+            <h2 class = "titleSection"> Contactenos</h2>
+            <p class = "subSection">
+                Gotcha es una organizacion sin fines de lucro. En caso de requerir contacto
+                con nosotros, hacerlo mediante los medios oficiales.
+            </p>
+
+            <div class="contacto-container">
+                <div class = "contact-info">
+                    <h3>Informacion de contacto</h3>
+                    <p>
+                        Los medios oficiales a continuacion son la manera recomendada para contactarnos
+                        </p>
+                        <p>
+                        En caso de hablarnos por cualquiera de nuestras redes sociales, la velocidad de respuesta esta sujeta a cambios
+                        </p>
+                </div>
+
+                <div class="contact-data">
+                    <strong> Telefono</strong>
+                    <p> 2512 4567</p>
+                </div>
+
+                 <div class="contact-data">
+                    <strong> Whatsapp</strong>
+                    <a href="https://wa.me/50662816425?text=Hola%20si%20lees%20este%20mensaje%20todo%20salio%20bien" target="_blank"> +506 6281 6425</a>
+                </div>
+                      
+                 <div class="contact-data">
+                    <strong> Correo Electronico</strong>
+                   <a href="mailto:justinbustos444@gmail.com"> justinbustos444@gmail.com</a>
+                </div>
+                
+                 <div class="contact-data">
+                    <strong> Ubicacion</strong>
+                    <p> Costa Rica</p>
+                </div>
+            </div>
+        </div>
+         <div class = "contenedor">
+            <h4 class = "formSection"> Complete el siguiente formulario para contactarnos</h4>
+          
+
+        <form id = "formContacto" action="#" method="post">
+            <div class ="form-group">
+                <label for="nombre"> Nombre Completo</label>
+                <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="obligatorio"
+                required
+                />
+            </div>
+            
+            <div class = "form-group">
+                <label for="email-address"> Correo Electronico</label>
+                <input
+                type = "email"
+                id = "email-address"
+                name = "email-address"
+                placeholder="obligatorio"
+                required
+                />
+            </div>
+
+            
+             <div class = "form-group">
+                <label for ="asunto"> Asunto</label>
+                <input
+                type = "text"
+                id = "email-asunto"
+                name = "email-asunto"
+                placeholder="Asunto"
+                />
+            </div>
+            
+             <div class = "form-group">
+                <label for = "mensaje"> Emergencia</label>
+                <textarea
+                id = "mensaje"
+                name = "mensaje"
+                rows = "7"
+                placeholder="Mencione la ayuda requerida"
+                required
+                ></textarea>
+            </div>
+            
+
+            <button type = "submit" class="btn">Enviar mensaje</button>
+        </form>
+        </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init("PhDzwVe89GYl-dVoP");
+    </script>
+    <script src = "js/script.js"></script>
 </body>
 </html>
+
