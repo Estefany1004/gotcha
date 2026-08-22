@@ -22,14 +22,14 @@ document.addEventListener('DOMContentLoaded', function(event){
             message: f_message
         };
 
-        emailjs.send('service_4pvndp7','template_25njlum',templateParams)
-        .then(function(){
-            alert("Gracias, su mensaje esta siendo procesado");
-            formulario.reset();
-        })
-        .catch(function(error){
-            alert("Problemas en el envio fueron detectados");
-            console.error("Envio fallido", error);
-        });
+       emailjs.send('service_4pvndp7', 'template_25njlum', templateParams)
+.then(function(){
+    alert("Gracias, su mensaje esta siendo procesado");
+    formulario.reset();
+})
+.catch(function(error){
+    alert("Problemas en el envio");
+    console.error("Envio fallido:", error);
+});
     });
 });
