@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-     <!-- Importando CSS -->
+    <!-- Importando CSS -->
     <link rel="stylesheet" href="css/style .css">
 
 </head>
 
 <body>
-
     <header> 
         <nav class = "navbar"> 
 
             <div class = "logo"> 
-
+                GOTCHA!
             </div>
             
-            <div class = "menu">
+            <div>
+
+              <ul class = "menu">
 
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="about.html">Sobre nosotros</a></li>
                 <li><a href="services.html">Servicios</a></li>
                 <li><a href="contact.html">Contacto</a></li>
+
+              </ul>
               
 
             </div>
@@ -34,12 +37,101 @@
     </header>
 
     <main>
+        <section class = "hero">
 
+            <div class = 'hero-overlay'>
+
+                <div class = "hero-content">
+
+                    <h1>We GOTCHA</h1>
+
+                    <h2>
+                        Ayuda humanitaria
+                    </h2>
+
+                    <p class="hero-description"> 
+                        Gotcha es una plataforma para agilizar procesos de ayuda humanitaria <br>ante desatres naturales.
+                    </p>
+
+                  <div class="hero-buttons">
+                    <a href="services.html" class = "btn"> Ver servicios </a>
+                  </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="info" class="section">
+
+            <div class="container"> 
+                <h2 class="presentation-title"> Presentación</h2>
+                <p class="presentation-subtitle"> Deseamos brindar soporte a las unidades de emergencia preexistentes.</p>
+
+               <div class="presentation-container">
+
+                    <div class="presentation-text">
+
+                        <h3>Agilizamos procesos de donaciones y atención ante desastres</h3>
+                        <p>
+                        GOTCHA es una plataforma web que busca agilizar procesos de donaciones para personas o refugios afectados por desastres naturales. El objetivo es brindar una respuesta más rápida ante llamadas de ayuda.
+                        <p>
+
+                        <p>
+                         Como comunidad comprendemos que es dificil llegar acada rincon en una situación como esta, por lo que proveemos un servicio para solicitar recursos o bien número de contacto para situaciones de suma emergencia. Así como capacitaciones relacionadas al tema.
+                        </p>
+                    </div>
+
+                    <img
+                        src="img/presentation.jpg"
+                        alt="Folo ilustrativa de presentación"
+                        class="presentation-photo"
+                    
+                    >
+
+                </div>
+                
         
+            </div>
+
+        </section>
+        
+        <section id="donations" class="section">
+
+            <div class="container">
+
+                <div class="donation-container">
+
+                    <div class="donation-text">
+
+                        <h2> Sistema de donaciones</h2>
+
+                        <p> GOTCHA cuenta tambíen con su propio sistema riguroso de donaciones. Todos los recursos son protegidos desde el momento que se adquieren hasta su entrega. </p>
+                        <p> El uso de cada material es registrado. No toleramos ningún tipo de deshonestidad sobre la manipulación de los mismos.</p>
+
+                    </div>
+
+                </div>
 
 
+            </div>
+
+        </section>
 
     </main>
+
+     <footer>
+        <div class="footer-container">
+            <p>
+                &copy; <span id = "anio"> </span>" GOTCHA. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Importando JS a proyecto -->
+    <script src="js/script.js"></script>
+
     
 </body>
 </html>
