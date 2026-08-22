@@ -1,4 +1,39 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    
+
+    background-color: #ffffff;
+
+    color: #334155;
+
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+
 /* ==============================
    NAVEGACIÓN
 ================================ */
@@ -48,7 +83,7 @@ header {
 }
 
 .menu a {
-    color: #eaebec;
+    color: #f9fafc;
 
     text-decoration: none;
 
@@ -59,4 +94,240 @@ header {
 
 .menu a:hover {
     color: #60a5fa;
+}
+
+/* ==============================
+   HERO / BANNER
+================================ */
+
+.hero {
+    min-height: 88vh;
+
+    background-image:
+        url("../img/banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    min-height: 88vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(64, 59, 59, 0.91),
+            rgba(33, 29, 30, 0.72)
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    padding: 60px 30px;
+}
+
+.hero h1{
+
+    font-size: 70px;
+
+    color:whitesmoke;
+
+    margin-bottom:5px;
+
+}
+
+.hero h2{
+
+    font-weight: normal;
+
+    font-size: 25px;
+
+    color:whitesmoke;
+
+    margin-bottom: 5px;
+}
+
+.hero-description{
+
+    max-width: 700px;
+   
+    font-size: 18px;
+
+    color:whitesmoke;
+
+
+    margin-bottom: 40px;
+}
+
+/* ==============================
+   BOTONES
+================================ */
+
+.btn,
+.proyecto button {
+    display: inline-block;
+
+    background-color: #821b1d;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 13px 24px;
+
+    font-size: 15px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s,
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+/* ==============================
+   Presentation - Section
+================================ */
+
+.section {
+    padding: 90px 0;
+}
+
+.presentation-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0 120px;
+
+    align-items: start;
+
+    margin-top: 40px;
+
+}
+
+.presentation-title{
+
+    font-size:50px;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.presentation-title::before {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+
+    height: 4px;
+
+    background-color: #2563eb;
+
+    margin: 15px auto;
+}
+
+.presentation-subtitle{
+    text-align: center;
+
+    color:grey;
+
+    margin-bottom: 10px;
+}
+
+.presentation-text h3 {
+    color: #020101;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+.presentation-text p {
+    max-width: 700px;
+
+    margin-bottom: 16px;
+
+    color: #64748b;
+
+}
+
+.presentation-photo{
+    width:300px;
+    height:350px;
+
+    border-radius: 5%;
+
+    margin-top: 40pxpx;
+}
+
+/* ==============================
+   Donation - Section
+================================ */
+
+.donation-container {
+    display: flexbox;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 40px auto;
+
+    padding: 30px 30px;
+
+    background-color: rgb(214, 222, 219);
+
+    color:rgb(18, 18, 17);
+
+    border-radius: 12px;
+
+}
+
+.donation-text h2{
+
+    color:black;
+
+    margin-bottom: 10px;;
+
+
+}
+
+/* ==============================
+   Donation - Section
+================================ */
+
+footer {
+    background-color: #390000;
+
+    color: #cbd5e1;
+
+    padding: 30px 20px;
+}
+
+.footer-container {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
 }
